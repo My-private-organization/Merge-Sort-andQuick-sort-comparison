@@ -50,7 +50,7 @@ public class Evaluation {
     }
 
     private static int[] generateRandomArray(int n ) {
-        return new Random().ints(n, 0, 10000).toArray();
+        return new Random().ints(n, 0, 1000000).toArray();
     }
 
     private static int[] generateDescArray(int n ) {
