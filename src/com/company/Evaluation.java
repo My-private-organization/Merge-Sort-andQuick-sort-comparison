@@ -40,8 +40,11 @@ public class Evaluation {
             long stopTimeOfQuickSort = System.currentTimeMillis();
             System.out.println("Quick Sort took: " + (stopTimeOfQuickSort - startTimeOfQuickSort) + " milliseconds");
 
-            
+            System.out.format("%s%20s\n", "Merge Sort", "Quick Sort");
 
+            for(int i=0; i<n; i++){
+                System.out.format("%d%20s\n", array[i], copyArray[i]);
+            }
         }
 
     }
