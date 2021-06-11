@@ -43,7 +43,7 @@ public class Evaluation {
             System.out.format("%s%20s\n", "Merge Sort", "Quick Sort");
 
             for(int i=0; i<n; i++){
-                System.out.format("%d%20s\n", array[i], copyArray[i]);
+                System.out.format("%d%20d\n", array[i], copyArray[i]);
             }
         }
 

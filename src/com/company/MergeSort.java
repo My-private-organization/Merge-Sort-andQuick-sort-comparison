@@ -34,26 +34,19 @@ public class MergeSort {
 
         while (i < n1 && j < n2) {
             if (leftArray[i] <= rightArray[j]) {
-                numbers[k] = leftArray[i];
-                i++;
+                numbers[k++] = leftArray[i++];
             }
             else {
-                numbers[k] = rightArray[j];
-                j++;
+                numbers[k++] = rightArray[j++];
             }
-            k++;
         }
 
         while (i < n1) {
-            numbers[k] = leftArray[i];
-            i++;
-            k++;
+            numbers[k++] = leftArray[i++];
         }
 
         while (j < n2) {
-            numbers[k] = rightArray[j];
-            j++;
-            k++;
+            numbers[k++] = rightArray[j++];
         }
     }
 
